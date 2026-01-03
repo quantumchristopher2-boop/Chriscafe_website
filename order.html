@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChrisCafe | Order Online</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="description" content="Order online from ChrisCafe – select your coffee, snacks, and beverages for pickup or delivery. Call, WhatsApp, or email to place your order.">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">ChrisCafe</div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="order.html" class="active">Order Online</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="visit.html">Visit Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero hero-order">
+    <div class="hero-content">
+      <h1>Place Your Order</h1>
+      <p>Easy, quick, and premium — pick up or delivery straight from ChrisCafe</p>
+    </div>
+  </section>
+
+  <!-- Order Form Section -->
+  <section class="order-section">
+    <div class="order-container">
+
+      <!-- Form -->
+      <form class="order-form" action="mailto:onyekachichristianjoshua@gmail.com,quantumchristopher2@gmail.com" method="post" enctype="text/plain">
+        <h2>Order Form</h2>
+
+        <!-- Items Selection -->
+        <label for="items">Select Items:</label>
+        <select id="items" name="items" multiple required>
+          <optgroup label="Hot Beverages">
+            <option value="Classic Latte">Classic Latte - $3.00</option>
+            <option value="Cappuccino">Cappuccino - $3.00</option>
+            <option value="Mocha Delight">Mocha Delight - $3.00</option>
+            <option value="Flat White">Flat White - $3.00</option>
+            <option value="Espresso">Espresso - $3.00</option>
+            <option value="Americano">Americano - $3.00</option>
+            <option value="Hot Chocolate">Hot Chocolate - $3.00</option>
+          </optgroup>
+          <optgroup label="Cold Beverages">
+            <option value="Iced Coffee">Iced Coffee - $3.00</option>
+            <option value="Iced Latte">Iced Latte - $3.00</option>
+            <option value="Cold Brew">Cold Brew - $3.00</option>
+          </optgroup>
+          <optgroup label="Pastries & Snacks">
+            <option value="Croissant">Croissant - $2.50</option>
+            <option value="Muffin">Muffin - $2.50</option>
+            <option value="Cookies">Cookies - $2.50</option>
+            <option value="Sandwich">Sandwich - $3.00</option>
+          </optgroup>
+        </select>
+
+        <!-- Quantity -->
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+        <!-- Pickup / Delivery -->
+        <label>Pickup or Delivery:</label>
+        <div class="pickup-delivery">
+          <input type="radio" id="pickup" name="delivery" value="Pickup" checked>
+          <label for="pickup">Pickup</label>
+          <input type="radio" id="delivery" name="delivery" value="Delivery">
+          <label for="delivery">Delivery</label>
+        </div>
+
+        <!-- Address (only if Delivery) -->
+        <label for="address">Delivery Address (if delivery selected):</label>
+        <textarea id="address" name="address" placeholder="Street, City, Area..." rows="2"></textarea>
+
+        <!-- Contact Info -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" value="+2347031682147" required>
+
+        <label for="email">Email (optional):</label>
+        <input type="email" id="email" name="email" placeholder="onyekachichristianjoshua@gmail.com / quantumchristopher2@gmail.com">
+
+        <!-- Special Instructions -->
+        <label for="notes">Special Instructions:</label>
+        <textarea id="notes" name="notes" placeholder="Any extra requests..." rows="2"></textarea>
+
+        <!-- Submit -->
+        <button type="submit" class="primary-btn">Submit Order</button>
+      </form>
+
+      <!-- Alternative Order Methods -->
+      <aside class="order-alternatives">
+        <h2>Or Order Directly:</h2>
+        <div class="contact-buttons">
+          <a href="tel:+2347031682147" class="contact-btn">
+            <!-- Phone SVG -->
+            <svg width="24" height="24" aria-hidden="true">
+              <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.72 11.72 0 003.7.6 1 1 0 011 1V20a1 1 0 01-1 1C10.92 21 3 13.08 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.28.21 2.52.6 3.7a1 1 0 01-.21 1.11l-2.27 2.27z" fill="#fff"/>
+            </svg>
+            Call ChrisCafe
+          </a>
+
+          <a href="https://wa.me/2358083148630" target="_blank" class="contact-btn">
+            <!-- WhatsApp SVG -->
+            <svg width="24" height="24" aria-hidden="true">
+              <path d="M12 0C5.37 0 0 5.37 0 12a12 12 0 0019.78 9.83l.22-.13 2.12 2.12 1.42-1.42-2.12-2.12.13-.22A12 12 0 0012 0zm6.3 17.18c-.27.77-1.57 1.47-2.16 1.56-.58.09-1.39.13-3.09-.59-2.04-.85-3.35-2.96-3.45-3.08-.1-.12-.83-1.24-.83-2.37s.48-1.77.65-2.01c.17-.24.38-.31.56-.31.14 0 .27 0 .39.01.13.01.31-.05.48.36.16.41.54 1.42.59 1.52.05.1.08.22-.02.36-.1.14-.15.24-.29.38-.14.14-.29.31-.41.42-.13.12-.27.26-.15.49.13.23.59.96 1.27 1.55.88.73 1.62.95 1.85 1.06.23.11.36.09.49-.05.13-.13.55-.64.69-.86.13-.22.27-.18.45-.11.18.06 1.17.55 1.37.65.2.1.33.15.38.24.05.09.05.53-.22 1.3z" fill="#fff"/>
+            </svg>
+            Order via WhatsApp
+          </a>
+
+          <a href="mailto:onyekachichristianjoshua@gmail.com?cc=quantumchristopher2@gmail.com&subject=ChrisCafe%20Order" class="contact-btn">
+            <!-- Email SVG -->
+            <svg width="24" height="24" aria-hidden="true">
+              <path d="M12 13.5L0 4V20h24V4L12 13.5zM12 11L24 2H0l12 9z" fill="#fff"/>
+            </svg>
+            Email ChrisCafe
+          </a>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-logo">ChrisCafe</div>
+    <p class="tagline">Your daily coffee, crafted with care.</p>
+    <div class="contact">
+      <a href="tel:+2347031682147">Call</a> | 
+      <a href="mailto:onyekachichristianjoshua@gmail.com">Email 1</a> | 
+      <a href="mailto:quantumchristopher2@gmail.com">Email 2</a> | 
+      <a href="https://wa.me/2358083148630" target="_blank">WhatsApp</a>
+    </div>
+    <p>&copy; 2026 ChrisCafe</p>
+  </footer>
+
+</body>
+</html>
